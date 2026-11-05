@@ -1,0 +1,6 @@
+a4bfb95 Añadir el gitlog
+a91a279 último cambio en el fichero
+4d69fe1 Modificado archivo en rama3 y merge de rama2
+6039926 tercer commit
+6d28085 segundo commit
+5502031 Primer commit
