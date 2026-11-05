@@ -1,0 +1,59 @@
+    1  git init -b main Practica-git
+    2  cd Practica-git
+    3  pwd
+    4  git remote add origin https://github.com/Ying11122/git-desde-GitBash
+    5  git remote -v
+    6  echo "Práctica Git" > info.txt
+    7  git status
+    8  git add .
+    9  git status
+   10  git commit -m "Primer commit"
+   11  git push -u origin main
+   12  nano info.txt
+   13  git status
+   14  git add info.txt
+   15  git status
+   16  git commit -m "segundo commit"
+   17  git push
+   18  git switch -c rama2
+   19  nano info.txt
+   20  git status
+   21  git add info.txt
+   22  git commit -m "tercer commit"
+   23  git push rama2
+   24  git status
+   25  git push origin rama2
+   26  git switch -c rama3
+   27  nano info.txt
+   28  git status
+   29  git add info.txt
+   30  git merge rama2
+   31  git status
+   32  git commit -m "Modificado archivo en rama3 y merge de rama2"
+   33  git push origin rama3
+   34  git status
+   35  git branch -a
+   36  git push origin rama3
+   37  git push origin rama2
+   38  git branch -a
+   39  git push rama3
+   40  git push origin rama3
+   41  git switch main
+   42  git diff main rama3
+   43  git merge rama3
+   44  nano info.txt
+   45  git add info.txt
+   46  git commit -m "último cambio en el fichero" 
+   47  git push
+   48  git branch -d rama2 rama3
+   49  git push origin --delete rama2 rama3
+   50  git log > Ying_gitlog.txt
+   51  git status
+   52  git add Ying_gitlog.txt
+   53  git commit -m "Añadir el gitlog"
+   54  git push
+   55  git log --oneline > Ying_gitlog_oneline.txt
+   56  git add Ying_gitlog_oneline.txt
+   57  git commit -m "Añadir el oneline" 
+   58  git push
+   59  history > Ying_historial.txt
